@@ -153,3 +153,7 @@ nieto_a(X, Y) :- progenitor(V, X), progenitor(Y, V).
 antepasado(X, Z) :- progenitor(X, Z).
 antepasado(X, Z) :- progenitor(X, Y), antepasado(Y, Z).
 ```
+
+![img.png](/img.png)
+**Estos ejercicios anteriores son los ejercicios que se deben de realizar
+como primera tarea de prolog**
