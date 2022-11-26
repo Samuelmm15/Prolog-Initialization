@@ -155,5 +155,12 @@ antepasado(X, Z) :- progenitor(X, Y), antepasado(Y, Z).
 ```
 
 ![img.png](/img.png)
+
 **Estos ejercicios anteriores son los ejercicios que se deben de realizar
 como primera tarea de prolog**
+
+## COMPILACIÓN DE UN ARCHIVO PROLOG Y CONSULTAS HACIENDO USO DE UBUNTU
+Para poder realizar la compilación del fichero: 
+- Nos debemos de desplazar hasta el directorio donde se encuentra el fichero con formado `.pl`.
+- Para poder compilar el fichero, se hace uso del comando `$ prolog archivo.pl`.
+- Una vez hecho esto, se pueden hacer consultas sobre dicho fichero.
