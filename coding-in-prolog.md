@@ -122,6 +122,14 @@ son unificables si se produce que:
   - Variables sin instancia emparejan a cualquier término.
   - Átomos o números solo unifican a átomos o números iguales.
 
+Para la realización de la unificación, hay que tener en cuenta que, esta se realiza de manera general, de la forma:
+
+```(prolog)
+ % Implementación de la unificación, para poder entender:
+ hermano(X, Y) :- progenitor(Z, X), progenitor(Z, Y), masculino(X), X \= Y.
+ % Hay que tener en cuenta que la unificación es la parte final de la regla.
+```
+
 ## Resatisfación
 
 Se trata de un proceso que solicita respuestas adicionales. Al encontrar una
