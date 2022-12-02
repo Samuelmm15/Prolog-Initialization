@@ -53,3 +53,9 @@ se Debe de usar siempre que se quiera hacer operaciones aritméticas. Los distin
 
 Cabe destacar que para poder hacer uso de cualquiera de los distintos operadores aritméticos que se encuentran dentro de prolog,
 se debe de hacer uso a su vez **SIEMPRE** del operador `is`. 
+
+### Generación de multiples líneas de salida con la `Terminal de Prolog`
+
+Hay que tener en cuenta que cuando se quiere generar una consulta de múltiples salidas en la terminal de prolog, para poder llevar a cabo
+esta acción se debe de pulsar la `barra espaciadora` ya que con esto lo que se consigue es generar las multiples salidas necesaria para la
+comprobación de los resultados.
