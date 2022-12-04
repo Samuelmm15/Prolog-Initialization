@@ -19,3 +19,9 @@ generado_int(X, Y, Z) :- between(Y, Z, X).
 mcd(X, Y, Z) :- X is gcd(Y, Z).
 % Haciendo uso del máximo común divisor implementado anteriormente se hace uso de la formula de la manera: a * b / mcd(a, b); para calcular el mínimo común múltiplo.
 mcm(X, Y, Z) :- X is (Y * Z) / gcd(Y, Z).
+
+% 4. Realización de un programa en prolog que se encarga de calcular el día de la semana para fechas modernas mediante el `método Lewis Carrol`. Ha de generarse un predicado
+% 'dia_semana/4' cuyos tres primeros argumentos sean números con el día, mes y año de una fecha, y el último debe instanciarse al átomo del día de la semana,
+% uno entre Lunes, martes, miercoles, jueves, viernes, sabado, domingo. Un ejemplo para poder entender esto anterior es:
+% dia_semana(31, 12, 2022, X)
+% X = sabado
