@@ -59,3 +59,10 @@ se debe de hacer uso a su vez **SIEMPRE** del operador `is`.
 Hay que tener en cuenta que cuando se quiere generar una consulta de múltiples salidas en la terminal de prolog, para poder llevar a cabo
 esta acción se debe de pulsar la `barra espaciadora` ya que con esto lo que se consigue es generar las multiples salidas necesaria para la
 comprobación de los resultados.
+
+### Existencia de librerías implementadas por defecto en prolog
+
+En prolog existen ciertas liberías y funciones que se encuentran implementadas por defecto en prolog y que pueden ser útiles para la 
+utilización de dicho lenguaje, es por ello que podemos ver una función implementada por defecto como puede ser `gcd\2` que se 
+trata de una función que se encuentra implementada por defecto y que se encarga de calcular el máximo común divisor de dos valores.
+Como se puede ver en el siguiente [enlace](https://www.swi-prolog.org/pldoc/man?function=gcd/2) se tienen los distitnos ejemplos de dichas funciones implementadas por defecto.

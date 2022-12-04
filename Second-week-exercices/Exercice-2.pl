@@ -15,9 +15,7 @@ generado_int(X, Y, Z) :- between(Y, Z, X).
 % 3. Realizar los predicados 'mcm/3' y 'mcd/3' que devuelva en el primer argumento el minimo comun multiplo y el maximo comun divisor en el segundo. Por ejemplo:
 % mcm(X, 2, 5) devuelve x=10. Lo mismo ocurre para el mcd.
 
-% Esto son algunos ejemplos de implementaciones
-% mcm(A,B,A1,B1,C):-A=B,C=A*(A1/A)*(B1/A).
-% % mcm(A,B,A1,B1,C):-A>B,X=A-B,mcm(X,B,A1,B1,C).
-% mcd(A,B,C):-A = B,C = A.
-% mcd(A,B,C):-A > B, X = A - B, mcd(X, B, C).
-% mcd(A,B,C):-A < B, Y = B - A, mcd(A, Y, C).
+% gcd es una funcion que se encuentra en la libreria de prolog y que se encarga de calcular el maximo comun divisor de dos numeros.
+mcd(X, Y, Z) :- X is gcd(Y, Z).
+% Haciendo uso del máximo común divisor implementado anteriormente se hace uso de la formula de la manera: a * b / mcd(a, b); para calcular el mínimo común múltiplo.
+mcm(X, Y, Z) :- X is (Y * Z) / gcd(Y, Z).
