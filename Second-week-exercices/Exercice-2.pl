@@ -25,3 +25,38 @@ mcm(X, Y, Z) :- X is (Y * Z) / gcd(Y, Z).
 % uno entre Lunes, martes, miercoles, jueves, viernes, sabado, domingo. Un ejemplo para poder entender esto anterior es:
 % dia_semana(31, 12, 2022, X)
 % X = sabado
+
+% Meses
+
+mes(1, 0).
+mes(2, 3).
+mes(3, 3).
+mes(4, 6).
+mes(5, 1).
+mes(6, 4).
+mes(7, 6).
+mes(8, 2).
+mes(9, 5).
+mes(10, 0).
+mes(11, 3).
+mes(12, 5).
+
+% Semana
+dia(0, domingo).
+dia(1, lunes).
+dia(2, martes).
+dia(3, miercoles).
+dia(4, jueves).
+dia(5, viernes).
+dia(6, sabado).
+
+% Funcion que se encarga de calcular el dia de la semana.
+dia_semana(Dia, Mes, Ano, DiaSemana) :-
+    mes(Mes, MesNum),
+    AnoNum is Ano - 1900,
+    AnoNum2 is AnoNum // 4,
+    AnoNum3 is AnoNum2 + AnoNum,
+    AnoNum4 is AnoNum3 + Dia,
+    AnoNum5 is AnoNum4 + MesNum,
+    AnoNum6 is AnoNum5 mod 7,
+    dia(AnoNum6, DiaSemana).
