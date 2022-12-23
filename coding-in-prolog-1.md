@@ -43,7 +43,7 @@ reings(anarawd,878,916)
 
 ## Operador `is`
 
-Este operador se encarga de evaluar aritméticamente la parte derecha de `is` y asigna o compara
+Este operador se encarga de e[coding-in-prolog-1.md](coding-in-prolog-1.md)valuar aritméticamente la parte derecha de `is` y asigna o compara
 su resultado con la variable de la izquierda. Todos los elementos de la derecha deben de ser conocidos (números y variables instanciadas).
 se Debe de usar siempre que se quiera hacer operaciones aritméticas. Los distintos operadores aritméticos que tiene prolog son:
 
